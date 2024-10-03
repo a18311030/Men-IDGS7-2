@@ -1,12 +1,12 @@
 import argparse
 import socket
 
-# Definir el argumento para la URL
+# Define el argumento para la url
 parse = argparse.ArgumentParser()
 parse.add_argument("-t", "--target", help="Ingresa la URL sin HTTP")
 parse = parse.parse_args()
 
-# Función para obtener la IP de una URL
+# Función para obtener la ip de una url
 def getIpLokochon(url):
     try:
         ip = socket.gethostbyname(url)
