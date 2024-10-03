@@ -7,7 +7,7 @@ parse = argparse.ArgumentParser()
 parse.add_argument('-t', '--target', help='Introduce la dirección IP o dominio de la víctima')
 parse = parse.parse_args()
 
-# Función para obtener la IP con nslookup
+# Función para obtener la ip con nslookup
 def get_ip(target):
     try:
         # Usar subprocess para capturar la salida de nslookup
